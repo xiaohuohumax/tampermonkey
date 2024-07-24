@@ -156,8 +156,15 @@ class AdBlocker {
 
   public run() {
     const observer = new MutationObserver(() => {
-      const cards = Array.from(document.querySelectorAll('.bili-dyn-list__item'));
+      const cards = Array.from(document.querySelectorAll<HTMLDivElement>('.bili-dyn-list__item'));
       const adCards = cards.filter(card => {
+
+        const text = card.innerText || card.textContent || '';
+        const hasKeyword = this.keywords.some(keyword => text.includes(keyword));
+        if (hasKeyword) {
+          return true;
+        }
+
         const contexts = Array.from(card.querySelectorAll<HTMLDivElement>('.bili-rich-text__content'));
         return contexts.some(c => {
           const hasGoodsSpan = c.querySelector('span[data-type="goods"]');
