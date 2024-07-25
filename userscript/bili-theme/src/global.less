@@ -1,0 +1,43 @@
+html[class^="bili_"] {
+  body {
+    color: var(--text1);
+    background-color: var(--bg2) !important;
+  }
+
+  .be-dropdown {
+    .be-dropdown-menu {
+      background-color: var(--bg1);
+      border-color: var(--line_regular);
+
+      .be-dropdown-item {
+        &:hover {
+          background-color: hsla(215, 6%, 60%, .1);
+        }
+
+        color: var(--text1);
+
+        span {
+          color: var(--text1);
+        }
+      }
+    }
+  }
+
+  .be-pager {
+
+    .be-pager-item,
+    .be-pager-next {
+      background-color: var(--bg1_float);
+      border-color: transparent;
+    }
+
+    .be-pager-options-elevator {
+      color: var(--text1);
+
+      input {
+        background-color: var(--bg1_float);
+        border-color: transparent;
+      }
+    }
+  }
+}

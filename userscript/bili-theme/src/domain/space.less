@@ -1,0 +1,366 @@
+html[class^="bili_"] {
+  #app {
+
+    #navigator,
+    #navigator-fixed {
+      .n-inner {
+        background: var(--bg1_float);
+        box-shadow: none;
+      }
+    }
+
+    .s-space {
+      background-color: var(--bg2) !important;
+
+      .col-full {
+        background: var(--bg1);
+        border-color: transparent;
+        box-shadow: none;
+      }
+
+      .more,
+      .more-btn,
+      .play-all-btn,
+      .play-all-channel,
+      .play-all-channel:hover,
+      .play-btn,
+      .count,
+      .qipapnum {
+        color: var(--text2);
+        border-color: var(--graph_bg_thin);
+        background-color: var(--graph_bg_thin);
+      }
+
+      .count,
+      .qipapnum {
+        &::before {
+          background-image: none;
+        }
+      }
+
+
+
+      #page-index {
+
+        .section,
+        .i-pin-v .be-tab,
+        .user-info-title {
+          border-bottom: 1px solid var(--line_regular);
+        }
+
+        .section-title,
+        .info-title,
+        .goto-auth {
+          color: var(--text1);
+        }
+
+        .col-1 {
+          background: var(--bg1);
+          border-color: transparent;
+
+          .i-pin-part {
+            .list-create {
+              background-color: transparent;
+              border: 2px dashed var(--line_regular);
+            }
+
+            .i-pin-c {
+              box-shadow: none;
+            }
+          }
+
+          .fav {
+            .fav-covers {
+              border-color: transparent;
+            }
+          }
+
+          .series .cover,
+          .video .cover,
+          .bangumi .cover,
+          .article .article-bgimg,
+          .coin .cover {
+            background: none;
+
+          }
+
+
+          .series {
+            .channel-item {
+              border-bottom: 1px solid var(--line_regular);
+
+              .channel-name {
+                color: var(--text1);
+              }
+            }
+          }
+
+          .bangumi {
+            .large-item {
+              .cover {
+                img {
+                  box-shadow: none;
+                }
+              }
+
+              .detail {
+                .title {
+                  color: var(--text1);
+                }
+
+                .desc {
+                  color: var(--text3);
+                }
+              }
+            }
+          }
+
+          .article {
+            .article-item {
+              .article-content {
+                border-bottom: 1px solid var(--line_regular);
+
+                .article-title {
+                  color: var(--text1);
+                }
+              }
+            }
+          }
+
+          // .coin {}
+        }
+
+        .col-2 {
+
+          .auth-description {
+            color: var(--text1);
+          }
+
+          .section {
+            background: var(--bg1);
+            border-color: transparent;
+          }
+
+          .section-title {
+            border-bottom: 1px solid var(--line_regular);
+          }
+
+
+          .elec {
+            .elec-status {
+              background-image: none;
+              color: var(--text2);
+
+              .elec-count {
+                color: var(--text1);
+              }
+            }
+
+            .elec-status-bg-grey {
+              background-color: transparent;
+            }
+          }
+
+          .i-ann {
+            .subscribe-title {
+              color: var(--text1);
+            }
+          }
+
+          .i-live {
+            .i-live-fo {
+              &>span {
+                border-color: transparent;
+                background-color: var(--bg1_float);
+              }
+            }
+          }
+
+        }
+      }
+
+
+      #page-dynamic {
+
+        .section-title,
+        .user-info-title {
+          border-bottom: 1px solid var(--line_regular);
+        }
+
+        .section-title,
+        .info-title,
+        .subscribe-title,
+        .goto-auth {
+          color: var(--text1);
+        }
+
+        .user-info-title {
+          border-bottom: 1px solid var(--line_regular);
+        }
+
+        .bili-dyn-item {
+          border-color: transparent;
+        }
+
+        .col-2 {
+          .section {
+            background: var(--bg1);
+            border-color: transparent;
+          }
+        }
+      }
+
+      #page-video,
+      #page-audio,
+      #page-article {
+        .contribution-sidenav {
+          color: var(--text1);
+          border-right: none;
+        }
+
+        .main-content {
+          border-left: none;
+        }
+
+        .contribution-item:not(.cur):hover {
+          background-color: transparent;
+        }
+      }
+
+      #page-video {
+        #submit-video-type-filter {
+          background: var(--graph_bg_thin);
+        }
+
+        .video-title {
+          color: var(--text1);
+        }
+
+      }
+
+      #page-audio {
+        .breadcrumb .item.cur {
+          color: var(--text1);
+        }
+      }
+
+      #page-article {
+        .row .breadcrumb .item:last-child {
+          color: var(--text1);
+        }
+      }
+
+      #page-channel {
+        .section {
+          border-color: transparent;
+        }
+
+        .channel-option.no-channel {
+          background: var(--bg1);
+
+        }
+
+        #page-series-index {
+          .breadcrumb {
+            .item.cur {
+              color: var(--text1);
+            }
+          }
+        }
+      }
+
+      #page-fav {
+        .fav-sidenav {
+          border-color: var(--line_regular);
+
+          .fav-container,
+          .watch-later {
+            border-color: var(--line_regular);
+          }
+
+          .fav-list {
+            .fav-item {
+              color: var(--text1);
+
+              &:not(.cur):hover {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+
+        .fav-main {
+          border-color: var(--line_regular);
+
+          .favList-info {
+            border-bottom-color: var(--line_regular);
+
+            .fav-name {
+              color: var(--text1);
+            }
+          }
+
+          .fav-header-info {
+            .filter-item {
+              color: var(--text1);
+            }
+
+
+
+            .search {
+              border-color: var(--line_regular);
+
+              .search-types {
+                border-color: var(--line_regular);
+
+                .be-dropdown-item {
+                  border-color: var(--line_regular);
+
+                }
+              }
+
+              .search-container {
+                input {
+                  background-color: transparent;
+                  color: var(--text1);
+                }
+              }
+            }
+          }
+
+          .small-item {
+            border-color: transparent;
+          }
+        }
+      }
+
+      .bangumi-pagelistbox {
+        .p {
+          background-color: var(--bg1_float);
+          color: var(--text1);
+          border-color: transparent;
+        }
+
+        .custom-right {
+          input {
+            background-color: var(--bg1_float);
+            color: var(--text1);
+            border-color: transparent;
+          }
+        }
+      }
+
+      #page-pgc,
+      #page-bangumi {
+        .pgc-item-title {
+          color: var(--text1);
+        }
+
+        .pgc-item-desc {
+          color: var(--text3);
+        }
+
+      }
+    }
+  }
+}
