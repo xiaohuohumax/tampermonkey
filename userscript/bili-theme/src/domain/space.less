@@ -6,6 +6,20 @@ html[class^="bili_"] {
       .n-inner {
         background: var(--bg1_float);
         box-shadow: none;
+
+        .g-search {
+          input {
+            background-color: var(--bg3);
+            border-color: transparent;
+            color: var(--text2);
+          }
+        }
+
+        .n-statistics {
+          .n-data-v {
+            color: var(--text1);
+          }
+        }
       }
     }
 
@@ -25,8 +39,8 @@ html[class^="bili_"] {
       .play-all-channel:hover,
       .play-btn,
       .count,
+      .user-info .change-info-btn,
       .qipapnum {
-        color: var(--text2);
         border-color: var(--graph_bg_thin);
         background-color: var(--graph_bg_thin);
       }
@@ -38,8 +52,6 @@ html[class^="bili_"] {
         }
       }
 
-
-
       #page-index {
 
         .section,
@@ -48,7 +60,6 @@ html[class^="bili_"] {
           border-bottom: 1px solid var(--line_regular);
         }
 
-        .section-title,
         .info-title,
         .goto-auth {
           color: var(--text1);
@@ -81,9 +92,7 @@ html[class^="bili_"] {
           .article .article-bgimg,
           .coin .cover {
             background: none;
-
           }
-
 
           .series {
             .channel-item {
@@ -145,6 +154,15 @@ html[class^="bili_"] {
             border-bottom: 1px solid var(--line_regular);
           }
 
+          .i-m {
+            .i-m-r2 {
+              border-color: var(--line_regular);
+
+              .i-m-upload {
+                border-color: var(--line_regular);
+              }
+            }
+          }
 
           .elec {
             .elec-status {
@@ -165,6 +183,13 @@ html[class^="bili_"] {
             .subscribe-title {
               color: var(--text1);
             }
+
+            #i-ann-content {
+              textarea {
+                background-color: transparent;
+                color: var(--text1);
+              }
+            }
           }
 
           .i-live {
@@ -175,10 +200,8 @@ html[class^="bili_"] {
               }
             }
           }
-
         }
       }
-
 
       #page-dynamic {
 
@@ -187,7 +210,6 @@ html[class^="bili_"] {
           border-bottom: 1px solid var(--line_regular);
         }
 
-        .section-title,
         .info-title,
         .subscribe-title,
         .goto-auth {
@@ -235,7 +257,6 @@ html[class^="bili_"] {
         .video-title {
           color: var(--text1);
         }
-
       }
 
       #page-audio {
@@ -257,13 +278,17 @@ html[class^="bili_"] {
 
         .channel-option.no-channel {
           background: var(--bg1);
-
         }
 
         #page-series-index {
           .breadcrumb {
             .item.cur {
               color: var(--text1);
+
+              .create-series-icon {
+                border-color: transparent;
+                background-color: var(--bg1_float);
+              }
             }
           }
         }
@@ -278,13 +303,17 @@ html[class^="bili_"] {
             border-color: var(--line_regular);
           }
 
-          .fav-list {
-            .fav-item {
+          .nav-add {
+            span {
               color: var(--text1);
+            }
+          }
 
-              &:not(.cur):hover {
-                background-color: transparent;
-              }
+          .fav-item {
+            color: var(--text1);
+
+            &:not(.cur):hover {
+              background-color: transparent;
             }
           }
         }
@@ -305,8 +334,6 @@ html[class^="bili_"] {
               color: var(--text1);
             }
 
-
-
             .search {
               border-color: var(--line_regular);
 
@@ -315,7 +342,6 @@ html[class^="bili_"] {
 
                 .be-dropdown-item {
                   border-color: var(--line_regular);
-
                 }
               }
 
@@ -359,7 +385,48 @@ html[class^="bili_"] {
         .pgc-item-desc {
           color: var(--text3);
         }
+      }
 
+      #page-setting {
+        #setting-privacy {
+          border-color: var(--line_regular);
+
+          .setting-privacy-item {
+            .setting-privacy-name {
+              color: var(--text1);
+            }
+          }
+        }
+
+        #setting-index-order {
+          border-color: var(--line_regular);
+
+          .setting-index-container {
+            border-color: var(--line_regular);
+
+            .setting-index-module {
+              border-color: var(--line_regular);
+            }
+          }
+        }
+
+        #setting-tags {
+          .setting-tag-list {
+            a {
+              background: transparent;
+              border-color: var(--line_regular);
+            }
+          }
+
+          .setting-add-tag {
+
+            #setting-new-tag,
+            #setting-new-tag-btn {
+              background: transparent;
+              border-color: var(--line_regular);
+            }
+          }
+        }
       }
     }
   }

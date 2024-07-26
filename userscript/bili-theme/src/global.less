@@ -10,14 +10,15 @@ html[class^="bili_"] {
       border-color: var(--line_regular);
 
       .be-dropdown-item {
+        color: var(--text1);
+        border-color: var(--line_regular);
+
         &:hover {
           background-color: hsla(215, 6%, 60%, .1);
         }
 
-        color: var(--text1);
-
         span {
-          color: var(--text1);
+          color: var(--text1) !important;
         }
       }
     }
@@ -37,6 +38,105 @@ html[class^="bili_"] {
       input {
         background-color: var(--bg1_float);
         border-color: transparent;
+      }
+    }
+  }
+
+  .btn {
+    background-color: transparent;
+
+    &.default {
+      background-color: transparent;
+    }
+
+    border-color: var(--text3) !important;
+  }
+
+  .report-popup {
+    .report-popup-tip {
+      color: var(--text1);
+    }
+
+    .report-popup-list {
+      .report-popup-item-text {
+        color: var(--text2);
+      }
+    }
+  }
+
+  .modal-container {
+    .modal-wrapper {
+      background-color: var(--bg1_float);
+
+      .modal-header {
+        .modal-title {
+          border-color: var(--line_regular);
+        }
+      }
+
+      .modal-body {
+        border-color: var(--line_regular);
+      }
+    }
+  }
+
+  .section {
+    .section-title {
+      color: var(--text1);
+    }
+  }
+
+
+  .bili-dialog-m {
+    .dialog-wrapper {
+      background-color: var(--bg1_float);
+
+      .dialog-title {
+        color: var(--text1);
+        border-color: var(--line_regular);
+      }
+
+      .create-input {
+        span {
+          color: var(--text1);
+        }
+
+        input,
+        textarea {
+          background-color: transparent;
+          color: var(--text1);
+          border-color: var(--line_regular);
+        }
+
+        .series-desc-box {
+          border-color: var(--line_regular);
+        }
+      }
+
+      .create-action {
+        .cancel-btn {
+          background-color: transparent;
+          border-color: var(--text3);
+        }
+      }
+    }
+  }
+
+  .bangumi-options {
+    .opt-list {
+      background-color: var(--bg1_float);
+      border-color: var(--line_regular);
+
+      li:not(.disabled) {
+        color: var(--text1);
+      }
+
+      li.disabled {
+        color: var(--text4);
+      }
+
+      li:hover {
+        background-color: var(--bg2_float);
       }
     }
   }
