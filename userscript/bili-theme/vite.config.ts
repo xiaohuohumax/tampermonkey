@@ -8,8 +8,9 @@ export default defineConfig(({ mode }) => {
       monkey({
         entry: 'src/main.ts',
         userscript: {
-          icon: 'https://vitejs.dev/logo.svg',
+          icon: 'https://static.hdslb.com/mobile/img/512.png',
           namespace: 'npm/vite-plugin-monkey',
+          license: 'MIT',
           match: [
             // 已经适配
             'https://www.bilibili.com/*',

@@ -8,11 +8,11 @@ export default defineConfig({
       entry: 'src/main.ts',
       build: {
         externalGlobals: {
-          sweetalert2: cdn.jsdelivr('Swal'),
+          sweetalert: cdn.unpkg('swal', 'dist/sweetalert.min.js'),
         },
       },
       userscript: {
-        icon: 'https://vitejs.dev/logo.svg',
+        icon: 'https://static.hdslb.com/mobile/img/512.png',
         namespace: 'npm/vite-plugin-monkey',
         license: 'MIT',
         match: [
