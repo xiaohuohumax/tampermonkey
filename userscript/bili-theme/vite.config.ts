@@ -15,8 +15,11 @@ export default defineConfig(({ mode }) => {
             // 已经适配
             'https://www.bilibili.com/*',
             'https://t.bilibili.com/*',
+            'https://show.bilibili.com/*',
             // 适配中
-            'https://space.bilibili.com/*'
+            'https://space.bilibili.com/*',
+            'https://live.bilibili.com/*',
+            'https://game.bilibili.com/*'
           ],
           'run-at': mode !== 'production'
             ? 'document-idle'

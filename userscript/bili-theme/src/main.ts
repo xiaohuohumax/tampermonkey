@@ -1,4 +1,7 @@
 import './domain/space.less';
+import './domain/live.less';
+import './domain/game.less';
+
 import './global.less';
 import './map.less';
 import './theme/dark.less';
