@@ -16,10 +16,15 @@ export default defineConfig(({ mode }) => {
             'https://www.bilibili.com/*',
             'https://t.bilibili.com/*',
             'https://show.bilibili.com/*',
+            'https://message.bilibili.com/*',
             // 适配中
             'https://space.bilibili.com/*',
             'https://live.bilibili.com/*',
-            'https://game.bilibili.com/*'
+            'https://game.bilibili.com/*',
+            // 未处理
+            'https://account.bilibili.com/*',
+            'https://manga.bilibili.com/*',
+            'https://link.bilibili.com/*'
           ],
           'run-at': mode !== 'production'
             ? 'document-idle'

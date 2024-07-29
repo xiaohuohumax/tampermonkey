@@ -6,8 +6,10 @@ import './global.less';
 import './map.less';
 import './theme/dark.less';
 
-// setInterval(() => {
-//   document.documentElement.classList.toggle('bili_dark');
-// }, 3000);
-
-document.documentElement.classList.toggle('bili_dark');
+document.documentElement.classList.add('bili_dark');
+const hostnames = window.location.hostname.split('.');
+if (hostnames.length > 0) {
+  const domain = hostnames[0].trim();
+  const themeClassName = `bili_domain_${domain}`;
+  document.documentElement.classList.add(themeClassName);
+}

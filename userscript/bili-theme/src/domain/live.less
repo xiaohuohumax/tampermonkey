@@ -1,7 +1,96 @@
-html[class^="bili_"] {
+html[class*="bili_domain_live"] {
+  * {
+    border-color: var(--graph_bg_thin) !important;
+  }
+
   .link-navbar-ctnr {
     nav {
       box-shadow: none !important;
+
+      .right-part {
+        .user-panel {
+          * {
+            color: var(--text1);
+          }
+
+          .user-panel-ctnr {
+            .user-panel {
+              background: var(--bg1);
+
+            }
+
+            .content-ctnr .control-block:hover {
+              background-color: var(--graph_bg_thick);
+            }
+          }
+
+          .content-ctnr {
+            .section-block {
+              background-color: transparent;
+            }
+          }
+        }
+
+
+        .shortcuts-ctnr {
+          .shortcut-item {
+
+            .follow-cntr,
+            .bili-download-panel {
+              background: var(--bg1);
+            }
+
+            .bili-download-panel {
+              .split-line {
+                background-color: var(--graph_bg_thin);
+              }
+            }
+          }
+        }
+      }
+
+      #nav-searchform {
+        background-color: var(--bg1);
+
+        .search-pannel {
+          background-color: var(--bg1);
+
+          .history {
+
+            .history-item {
+              background-color: transparent;
+            }
+          }
+
+          .trending {
+            .trendings-rank.search-rank-top {
+              color: inherit;
+            }
+
+            .trending-item {
+              &:hover {
+                background-color: var(--graph_bg_thin);
+              }
+            }
+          }
+        }
+
+        .search-bar {
+          input {
+            color: var(--text1) !important;
+          }
+
+          button:hover {
+            background-color: transparent;
+          }
+        }
+
+        &.is-focus .search-bar,
+        .search-bar:hover,
+        &.is-focus .nav-search-content {
+          background-color: var(--bg1) !important;
+        }
+      }
     }
 
     #main-ctnr {
