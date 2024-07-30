@@ -3,6 +3,14 @@ html[class*="bili_domain_space"] {
     border-color: var(--graph_bg_thin) !important;
   }
 
+  #biliMainHeader {
+    .center-search-container {
+      .nav-search-content {
+        border: none;
+      }
+    }
+  }
+
   #app {
 
     #navigator,
@@ -256,6 +264,24 @@ html[class*="bili_domain_space"] {
 
         .fav-main {
 
+          .fav-header {
+            .fav-action-top {
+              &>* {
+                color: inherit;
+              }
+            }
+
+            .fav-action-bottom {
+              .fav-action-fixtop {
+                background-color: var(--bg1_float);
+
+                li {
+                  color: var(--text1);
+                }
+              }
+            }
+          }
+
           .favList-info {
             .fav-name {
               color: var(--text1);
@@ -273,6 +299,18 @@ html[class*="bili_domain_space"] {
                 input {
                   background-color: transparent;
                   color: var(--text1);
+                }
+              }
+            }
+          }
+
+          .fav-content {
+            .fav-video-list {
+              .small-item {
+
+                &:hover,
+                &.selected {
+                  background-color: transparent;
                 }
               }
             }
@@ -303,6 +341,14 @@ html[class*="bili_domain_space"] {
 
         .pgc-item-desc {
           color: var(--text3);
+        }
+
+        .filter-content {
+          color: var(--text1);
+
+          .cur-filter {
+            color: var(--text1);
+          }
         }
       }
 

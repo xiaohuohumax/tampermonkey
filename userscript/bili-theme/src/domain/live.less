@@ -76,12 +76,18 @@ html[class*="bili_domain_live"] {
         }
 
         .search-bar {
+          background-color: transparent;
+
           input {
             color: var(--text1) !important;
+            background-color: transparent;
+            border: none !important;
           }
 
-          button:hover {
-            background-color: transparent;
+          button {
+            &:hover {
+              background-color: transparent;
+            }
           }
         }
 

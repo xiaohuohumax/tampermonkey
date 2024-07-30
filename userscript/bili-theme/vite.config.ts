@@ -17,8 +17,8 @@ export default defineConfig(({ mode }) => {
             'https://t.bilibili.com/*',
             'https://show.bilibili.com/*',
             'https://message.bilibili.com/*',
-            // 适配中
             'https://space.bilibili.com/*',
+            // 适配中
             'https://live.bilibili.com/*',
             'https://game.bilibili.com/*',
             // 未处理

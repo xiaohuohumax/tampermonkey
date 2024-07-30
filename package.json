@@ -6,6 +6,7 @@
   "private": true,
   "packageManager": "pnpm@9.0.4",
   "scripts": {
+    "dev:bili-theme": "pnpm --filter=./userscript/bili-theme --stream run dev",
     "build": "pnpm -r --filter=./userscript/** --stream run build",
     "clear": "rimraf -g **/node_modules **/dist",
     "commit": "git add . && cz",
