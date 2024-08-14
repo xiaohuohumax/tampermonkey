@@ -208,6 +208,10 @@ html[class*="bili_domain_space"] {
       #page-video {
         #submit-video-type-filter {
           background: var(--graph_bg_thin);
+
+          .count {
+            background-color: var(--graph_bg_thin);
+          }
         }
 
         .video-title {
@@ -232,6 +236,14 @@ html[class*="bili_domain_space"] {
           background: var(--bg1);
         }
 
+        .page-head {
+          .breadcrumb {
+            .item {
+              color: var(--text1);
+            }
+          }
+        }
+
         #page-series-index {
           .breadcrumb {
             .item.cur {
@@ -240,6 +252,12 @@ html[class*="bili_domain_space"] {
               .create-series-icon {
                 background-color: var(--bg1_float);
               }
+            }
+          }
+
+          .content {
+            .split-line {
+              background: none;
             }
           }
         }
@@ -268,6 +286,15 @@ html[class*="bili_domain_space"] {
             .fav-action-top {
               &>* {
                 color: inherit;
+              }
+            }
+
+            .fav-filters {
+              .be-dropdown-menu {
+                .be-dropdown-item:hover {
+                  background-color: var(--bg2);
+                  ;
+                }
               }
             }
 

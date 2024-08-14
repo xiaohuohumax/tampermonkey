@@ -18,11 +18,11 @@ export default defineConfig(({ mode }) => {
             'https://show.bilibili.com/*',
             'https://message.bilibili.com/*',
             'https://space.bilibili.com/*',
+            'https://account.bilibili.com/*',
             // 适配中
             'https://live.bilibili.com/*',
             'https://game.bilibili.com/*',
             // 未处理
-            'https://account.bilibili.com/*',
             'https://manga.bilibili.com/*',
             'https://link.bilibili.com/*'
           ],
